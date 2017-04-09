@@ -1,0 +1,8 @@
+/build/
+.settings
+classes/*
+bin
+bin/
+.class
+*.class
+.DS_Store
