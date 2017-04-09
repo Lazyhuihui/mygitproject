@@ -20,15 +20,15 @@
 			<classpath refid="compile.classpath" />
 		</javac>
 		
-		<!-- <copy todir="WebContent/WEB-INF/classes">
+		<copy todir="WebContent/WEB-INF/classes">
             <fileset dir="resources">
                 <include name="*" />
-            	<include name="cache/*" />
+            	<!--<include name="cache/*" />
             	<include name="mappings/*/*/*" />
             	<include name="templates/modules/gen/*/*" />
-            	<include name="templates/modules/gen/*" />
+            	<include name="templates/modules/gen/*" />-->
             </fileset>
-        </copy> -->
+        </copy>
 	</target>
 
 	<target name="jar" depends="compile">
