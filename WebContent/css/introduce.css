@@ -1,0 +1,220 @@
+.breadcrumb > li + li:before{
+	content: ">";
+}
+.book-detail{
+	padding: 30px 20px;
+	border: 1px solid #ebe6e1;
+	margin-bottom: 50px;
+}
+.book-detail .book-cover{
+	display: block;
+}
+.book-detail .book-cover img{
+	width: 100%;
+}
+.book-detail .book-info .book-title{
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+}
+.book-detail .book-info p{
+	font-size: 14px;
+	color: #999;
+}
+.book-detail .book-info p span{
+	display:  inline-block;
+}
+.btn-box{
+	margin-top: 50px;
+}
+.btn-box .btn{
+	margin-right: 10px;
+}
+.star-img{
+	width: 55px;
+	height: 11px;
+	margin: 0 3px 0 0;
+	overflow: hidden;
+	background: url(../images/star.png) no-repeat;
+}
+.allstar40 {
+ 	background-position: 0 -22px;
+}
+.allstar45 {
+ 	background-position: 0 -11px;
+}
+.section-item .item-entry-star .average-rating{
+	color:#e09015;
+}
+.myTab{
+	border-top: 3px solid #333;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+.myTab>li>a{
+	padding-left: 40px;
+	padding-right: 40px;
+	border-radius: 0;
+} 
+.tab-content{
+	border: 1px solid #ddd;
+	margin: 20px 0;
+	padding: 30px 20px;
+}
+.catalog a{
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px dotted #ccc;
+	padding-left: 30px;
+}
+.catalog a:hover{
+	text-decoration: none;
+	color: red;
+}
+
+.reply-box {
+  font-size: 14px;
+  margin-top: 16px;
+  position: relative;
+  zoom: 1;
+}
+.reply-box .contentwrap {
+  border: #ebe6e1 solid 1px;
+  padding: 10px;
+  background: #fff;
+}
+.reply-box textarea {
+  width: 100%;
+  height: 138px;
+  overflow: auto;
+  font-size: 14px;
+  font-family: Microsoft Yahei;
+  resize: none;
+  border: none;
+  display: block;
+  color: #333;
+}
+.reply-box .bottombar {
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+}
+.reply-box .bottombar .size-leave{
+	display: inline-block;
+	font-size: 14px;
+	color: #999;
+	text-indent: 10px;
+}
+.reply-box .bottombar .replaybtn{
+	margin-top: 10px;
+}
+.comment-list{
+	margin-top: 30px;
+}
+.comment-list ul{
+	padding:0;
+}
+.comment-list .item-li{
+	position: relative;
+	padding: 20px 20px 20px 64px;
+	border-top: #ebe6e1 solid 1px;
+	zoom: 1;
+}
+.comment-list .item-li .head-pic{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 32px;
+	height: 55px;
+	overflow: hidden;
+}
+.comment-list .item-li .head-pic img{
+	width: 32px;
+}
+.comment-list .item-li .info{
+	height: 18px;
+	line-height: 18px;
+	color: #888;
+} 
+.comment-list .item-li .info cite{
+	font-size: 12px;
+	font-style: normal;
+} 
+.comment-list .item-li .info a{
+	color: #3c98c9;
+}
+.comment-list .item-li .info .time{
+	color: #999;
+	float: right;
+}
+.comment-list .item-li blockquote{
+	font-size: 12px;
+	color: #888;
+	padding-top: 5px;
+	word-wrap: break-word;
+	word-break: break-all;
+	border: none;
+}
+.comment-list .item-li .opt{
+	position: relative;
+	margin-top: 10px;
+	text-align: right;
+	font-size: 14px;
+}
+.comment-list .item-li .opt .J_Reply{
+	color: #888;
+	margin-left: 10px;
+}
+.pager-box{
+	text-align: center;
+}
+.side-bar{
+	margin-top: 55px;
+}
+.side-bar-item{
+	margin-bottom: 30px;
+}
+.h-title{
+	font-size: 16px;
+	font-weight: bold;
+}
+.adv a img{
+	width: 100%;
+}
+.reader-interest{
+	border: 1px solid #ddd;
+	padding: 18px;
+	overflow: hidden;
+}
+.reader-interest ul{
+	padding:0;
+}
+.reader-interest li{
+	display: block;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.reader-interest li a{
+ 	display: block;
+ 	width: 100%;
+ 	overflow: hidden;
+ }
+ .reader-interest li a:hover{
+ 	background-color: #f0f0f0;
+ 	box-shadow: 0 0 5px #666;
+ }
+ .reader-interest li a .other-book-img{
+ 	width: 40%;
+ }
+ .reader-interest li a .other-book-img img{
+ 	width: 100%;
+ }
+ .reader-interest li a .other-book-info{
+ 	width: 60%;
+ 	padding: 10px;
+ }
+ .reader-interest li a .other-book-info p{
+ 	font-size: 12px;
+ 	color: #999;
+ }

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cache="http://www.springframework.org/schema/cache"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:ehcache="http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+   http://www.springframework.org/schema/beans/spring-beans.xsd 
+     http://www.springframework.org/schema/cache 
+     http://www.springframework.org/schema/cache/spring-cache.xsd
+     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+     http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring
+     http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring/ehcache-spring-1.1.xsd">
+
+	<cache:annotation-driven mode="proxy" /> 
+	<context:property-placeholder ignore-unresolvable="true" location="classpath:application.properties" />
+	<bean name="cacheClientFactory"
+		class="com.google.code.ssm.providers.xmemcached.MemcacheClientFactoryImpl" />
+
+	<bean name="cacheConfiguration" class="com.google.code.ssm.providers.CacheConfiguration">
+		<property name="consistentHashing" value="true" />
+	</bean>
+
+	<bean name="addressProvider_default" class="com.google.code.ssm.config.DefaultAddressProvider">
+		<property name="address" value="${memcached.cache01}" />
+	</bean>
+	<!-- generic cache manager -->
+	<bean id="cacheManager" class="org.springframework.cache.support.SimpleCacheManager">
+		<property name="caches">
+			<set>
+				<bean p:name="default" class="org.springframework.cache.concurrent.ConcurrentMapCacheFactoryBean" />
+				<bean p:name="sessiontoken" class="org.springframework.cache.concurrent.ConcurrentMapCacheFactoryBean" />
+				<bean p:name="Dperiodbasicinfo" class="org.springframework.cache.concurrent.ConcurrentMapCacheFactoryBean" />
+				<bean p:name="usercoin" class="org.springframework.cache.concurrent.ConcurrentMapCacheFactoryBean" />
+			</set>
+		</property>
+		
+		
+		
+	</bean> 
+
+</beans> 

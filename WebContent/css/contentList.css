@@ -1,0 +1,185 @@
+.content-list{
+	padding: 10px 20px;
+	border: 1px solid #ddd;
+	margin: 30px 0;
+}
+.list-item{
+	padding: 20px 0;
+	border-bottom: 1px solid #dedede;
+}
+.list-item:last-child{
+	border-bottom: none;
+}
+.list-item h4{
+	margin-bottom: 20px;
+}
+.list-item h4 a{
+	font-size: 16px;
+	font-weight: bold;
+	color:#666;
+}
+.list-item .list-item-p{
+	margin: 10px 0 16px;
+}
+.list-item .list-item-p a{
+	font-size: 14px;
+	color: #666;
+}
+.list-item .list-item-info span{
+	font-size: 12px;
+	color: #9a9a9a;
+}
+.list-item .list-item-info span a{
+	font-size: 12px;
+	color: #9a9a9a;
+}
+.list-item h4 a:hover,.list-item .list-item-p a:hover,.list-item .list-item-info span a:hover{
+	color:#1E90FF;
+	text-decoration: none;
+}
+.list-item .row{
+	margin-left: 0;
+	margin-right: 0;
+}
+.list-item .row .col{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.load-more{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.load-more .more-btn{
+	display: inline-block;
+	width: 90%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	color: blue;
+	text-align: center;
+	border: 1px solid blue;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+.load-more .more-btn:hover{
+	background-color: #ddd;
+	text-decoration: none;
+}
+
+.side-bar-item .side-bar-title{
+	height: 40px;
+	line-height: 40px;
+	text-align: right;
+	overflow: hidden;
+	background: url(../images/title_bg.jpg) repeat-x right bottom;
+	margin-top: 20px;
+}
+.side-bar-item .side-bar-title span{
+	float: left;
+	font-size: 25px;
+	color: #338899;
+	background: #fff;
+	padding-right: 30px;
+}
+.side-bar-item .side-bar-title a.more{
+	color:#aaa;
+}
+.bestbook-list {
+	height: 280px;
+	text-align: left;
+	margin-top: 10px;
+}
+.bestbook-list .list{
+	height: 33px; 
+	overflow: hidden;
+	transition:all .7s;
+}
+.bestbook-list .list-now {
+  	height: 140px;
+}
+.bestbook-list .list-now h4 {
+ 	border-bottom: 1px solid #33899a;
+}
+.bestbook-list h4 {
+	height: 32px;
+	font: 12px/32px "微软雅黑";
+	padding-left: 30px;
+}
+.bestbook-list h4.num1{
+  	background: url(../images/num1_icon.jpg) no-repeat left center;
+}
+.bestbook-list h4.num2{
+  	background: url(../images/num2_icon.jpg) no-repeat left center;
+}
+.bestbook-list h4.num3{
+ 	background: url(../images/num3_icon.jpg) no-repeat left center;
+}
+.bestbook-list h4.num4{
+ 	background: url(../images/num4_icon.jpg) no-repeat left center;
+}
+.bestbook-list h4.num5{
+ 	background: url(../images/num5_icon.jpg) no-repeat left center;
+}
+.bestbook-list .list h4 a{
+ 	color:#333;
+ 	text-decoration:none;
+}
+.bestbook-list .list h4 a:hover{
+ 	color:#c00;
+ 	text-decoration:underline;
+}
+.bestbook-list .pictxt {
+	background: url(../images/pictxt_bg.png) repeat;
+	height: 90px;
+	margin-top: 2px;
+}
+.bestbook-list .pictxt .pic {
+	display: inline;
+	width: 65px;
+	float: left;
+}
+.bestbook-list .pictxt .txt {
+	display: inline;
+	width: 190px;
+	float: right;
+}
+.bestbook-list .pictxt .txt h5 {
+	line-height: 35px;
+	font-size: 14px;
+	color: #333;
+	font-weight: bold;
+	margin: 0;
+}
+.bestbook-list .pictxt .txt p {
+ 	line-height: 20px;
+ 	margin: 0;
+ 	font-size: 12px;
+}
+
+.txtList {
+	overflow: hidden;
+	margin-top: 10px;
+}
+.txtList ul{
+	margin: 0;
+	padding: 0;
+}
+.txtList li {
+	list-style: none;
+	line-height: 32px;
+	padding-left: 10px;
+	background: url(../images/icon03.jpg) no-repeat 2px center;
+}
+.txtList li a{
+	font-size: 12px;
+	color: #333;
+	text-decoration:none;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.txtList li a:hover{
+	color:#c00;
+ 	text-decoration:underline;
+}

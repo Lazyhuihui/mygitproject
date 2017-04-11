@@ -1,0 +1,200 @@
+.breadcrumb > li + li:before{
+	content: ">";
+}
+
+.wrapper{
+	border: 1px solid #ddd;
+	margin: 20px 0;
+	padding: 30px 20px;
+}
+.content-title{
+	margin-bottom: 30px;
+}
+.content-title h1{
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	color: #333;
+	margin: 0  0 5px 0;
+}
+.content-title p{
+	font-size: 12px;
+	text-align: center;
+	color: #999;
+}
+.content-detail{
+	padding: 0 5px;
+}
+.content-detail p{
+	font-size: 14px;
+	color: #333;
+	line-height: 2em;
+}
+.author-feelings{
+	margin: 30px 0 50px;
+}
+.author-feelings .feeling-box{
+	padding: 20px;
+	border: 1px solid #ddd;
+}
+.author-feelings .feeling-box p{
+	font-size: 14px;
+	color: #666;
+	line-height: 1.5em;
+}
+.reply-box {
+  font-size: 14px;
+  margin-top: 16px;
+  position: relative;
+  zoom: 1;
+}
+.reply-box .contentwrap {
+  border: #ebe6e1 solid 1px;
+  padding: 10px;
+  background: #fff;
+}
+.reply-box textarea {
+  width: 100%;
+  height: 138px;
+  overflow: auto;
+  font-size: 14px;
+  font-family: Microsoft Yahei;
+  resize: none;
+  border: none;
+  display: block;
+  color: #333;
+}
+.reply-box .bottombar {
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+}
+.reply-box .bottombar .size-leave{
+	display: inline-block;
+	font-size: 14px;
+	color: #999;
+	text-indent: 10px;
+}
+.reply-box .bottombar .replaybtn{
+	margin-top: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.comment-list{
+	margin-top: 30px;
+}
+.comment-list ul{
+	padding:0;
+}
+.comment-list .item-li{
+	position: relative;
+	padding: 20px 20px 20px 64px;
+	border-top: #ebe6e1 solid 1px;
+	zoom: 1;
+}
+.comment-list .item-li .head-pic{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 32px;
+	height: 55px;
+	overflow: hidden;
+}
+.comment-list .item-li .head-pic img{
+	width: 32px;
+}
+.comment-list .item-li .info{
+	height: 18px;
+	line-height: 18px;
+	color: #888;
+} 
+.comment-list .item-li .info cite{
+	font-size: 12px;
+	font-style: normal;
+} 
+.comment-list .item-li .info a{
+	color: #3c98c9;
+}
+.comment-list .item-li .info .time{
+	color: #999;
+	float: right;
+}
+.comment-list .item-li blockquote{
+	font-size: 12px;
+	color: #888;
+	padding-top: 5px;
+	word-wrap: break-word;
+	word-break: break-all;
+	border: none;
+}
+.comment-list .item-li .opt{
+	position: relative;
+	margin-top: 10px;
+	text-align: right;
+	font-size: 14px;
+}
+.comment-list .item-li .opt .J_Reply{
+	color: #888;
+	margin-left: 10px;
+}
+.comment-list .item-li .opt .J_Reply i{
+	display: inline-block;
+	position: relative;
+	width: 16px;
+	height: 15px;
+	top: 4px;
+	left: -3px;
+	background: url(../images/commons.png) 0 -30px no-repeat;
+}
+.pager-box{
+	text-align: center;
+}
+.side-bar{
+	margin-top: 55px;
+}
+.side-bar-item{
+	margin-bottom: 30px;
+}
+.h-title{
+	font-size: 16px;
+	font-weight: bold;
+}
+.adv a img{
+	width: 100%;
+}
+.reader-interest{
+	border: 1px solid #ddd;
+	padding: 18px;
+	overflow: hidden;
+}
+.reader-interest ul{
+	padding:0;
+}
+.reader-interest li{
+	display: block;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.reader-interest li a{
+ 	display: block;
+ 	width: 100%;
+ 	overflow: hidden;
+ }
+ .reader-interest li a:hover{
+ 	background-color: #f0f0f0;
+ 	box-shadow: 0 0 5px #666;
+ }
+ .reader-interest li a .other-book-img{
+ 	width: 40%;
+ }
+ .reader-interest li a .other-book-img img{
+ 	width: 100%;
+ }
+ .reader-interest li a .other-book-info{
+ 	width: 60%;
+ 	padding: 10px;
+ }
+ .reader-interest li a .other-book-info p{
+ 	font-size: 12px;
+ 	color: #999;
+ }
