@@ -1,6 +1,4 @@
-package com.huihui.spring.controller;
-
-import java.util.List;
+package com.huihui.water.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -11,17 +9,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.huihui.mybatis.dao.IUserOperation;
-import com.huihui.mybatis.entity.Article;
-
 @Controller
-public class IndexController {
-    @Autowired
-    IUserOperation userMapper;
+public class ContentDetail {
 
-    @RequestMapping("/index")
+    @RequestMapping("/contentDetail")
     public ModelAndView listall(HttpServletRequest request,HttpServletResponse response){
         //List<Article> articles=userMapper.getUserArticles(1); 
-        ModelAndView mav=new ModelAndView("index");
+        ModelAndView mav=new ModelAndView("contentDetail");
        // mav.addObject("articles",articles);
         return mav;
     }

@@ -61,9 +61,11 @@
          <!--dataSource属性指定要用到的连接池--> 
         <property name="dataSource" ref="dataSource"/> 
      	 <!--configLocation属性指定mybatis的核心配置文件--> 
-     	<property name="configLocation" value="classpath:Configuration.xml" /> 
+     	<!-- <property name="configLocation" value="classpath:Configuration.xml" />  -->
      	<!-- 所有配置的mapper文件 -->
-     	<property name="mapperLocations" value="classpath*:com/huihui/modules/*.xml" />
+     	<property name="typeAliasesPackage" value="com.huihui"/>
+     	<property name="mapperLocations" value="classpath:/mappings/modules/*/*.xml"/>
+		<property name="configLocation" value="classpath:/mybatis-config.xml"></property>
     </bean>
     <!-- 扫描basePackage下所有以@MyBatisDao注解的接口 -->
     <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
@@ -74,9 +76,9 @@
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
       <property name="dataSource" ref="dataSource" />
     </bean>
-    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+    <!-- <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
       <property name="basePackage" value="com.huihui.mybatis.dao" />     
-    </bean>
+    </bean> -->
     <!-- 缓存配置 -->
 	<!-- <bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">
 		<property name="configLocation" value="classpath:${ehcache.configFile}" />

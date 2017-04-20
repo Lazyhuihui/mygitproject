@@ -2,9 +2,10 @@ package com.huihui.mybatis.dao;
 
 import java.util.List;
 
+import com.huihui.common.persistence.annotation.MyBatisDao;
 import com.huihui.mybatis.entity.Article;
 import com.huihui.mybatis.entity.User;
-
+@MyBatisDao
 public interface IUserOperation {    
     public User selectUserByID(int id);
     public List selectUsers(String userName);
