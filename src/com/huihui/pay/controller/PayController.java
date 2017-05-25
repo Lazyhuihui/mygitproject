@@ -17,7 +17,7 @@ public class PayController extends MyHttpServlet{
 		response.setContentType("text/html; charset=utf-8");
 		
 		String out_trade_no=AESencryptUtil.getDefaultInstance().encrypt(
-                String.valueOf("31431341439"));
+                String.valueOf("314313431439"));
 		req.setAttribute("WIDbody", "鼎湖山泉订单");
         req.setAttribute("out_trade_no", out_trade_no);
         req.setAttribute("subject","鼎湖山泉订单");
